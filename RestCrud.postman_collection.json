@@ -1,0 +1,73 @@
+{
+	"variables": [],
+	"info": {
+		"name": "RestCrud",
+		"_postman_id": "1745468c-9bff-b1b4-110a-31abc2a19413",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"url": "http://restcrud.local/api/v1/review",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Insert",
+			"request": {
+				"url": "http://restcrud.local/api/v1/review",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order_id\": \"1\",\n    \"product_id\": \"1\",\n    \"user_id\": \"1\",\n    \"rating\": \"3\",\n    \"review\": \"Mantab gan\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"url": "http://restcrud.local/api/v1/review/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"order_id\": \"1\",\n    \"product_id\": \"1\",\n    \"user_id\": \"1\",\n    \"rating\": \"4\",\n    \"review\": \"Mantab gan 2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"url": "http://restcrud.local/api/v1/review/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
